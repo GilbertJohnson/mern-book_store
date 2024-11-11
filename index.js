@@ -8,7 +8,7 @@ dotenv.config();
  *      App config
  */
 const PORT = process.env.PORT || 5500;
-const mdbb_conn_str = process.env.CONN_STR_MDB;
+const mdbb_conn_str = process.env.MONGODB_URI;
 const app = express()
 
 app.listen(PORT,()=>{
